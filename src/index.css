@@ -1,0 +1,78 @@
+#body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062e6, #33aeff);
+}
+/* to contain all cards  */
+.container {
+  margin-top: 5%;
+}
+
+/* each card component */
+.card {
+  border: none;
+  border-radius: 20rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  margin: 35px;
+}
+
+/* seperation between features */
+.hr {
+  margin: 1.5rem 0;
+}
+
+/* card title css */
+.card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+/* card price css */
+.card-price {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* per plan css */
+.month {
+  font-size: 0.8rem;
+}
+
+/* list style */
+.card ul li {
+  margin-bottom: 1rem;
+  list-style-type: none;
+  font-weight: 500;
+  list-style-type: "💥   ";
+  /* text-decoration: line-through; */
+}
+
+.dull {
+  opacity: 0.7;
+}
+/* dull makes unsupported feature and plan name dull */
+
+/* button css */
+.btn {
+  font-size: 80%;
+  border-radius: 10rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+/* hover on card  */
+.card:hover {
+  margin-top: -0.25rem;
+  margin-bottom: 0.1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  opacity: 1;
+}
