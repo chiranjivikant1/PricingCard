@@ -9,9 +9,11 @@ function changeColor(bgclr) {
   let objclr = {};
   if (bgclr === "red") {
     objclr.color = "crimson";
+    objclr.emoji = "❌";
     return objclr;
   } else {
     objclr.color = "#007bff";
+    objclr.emoji = "✔️";
     return objclr;
   }
 }
@@ -31,13 +33,15 @@ function PricingCard(props) {
         <ul>
           {props.features.map((data1, index) => {
             // changing colour based on access level
-            let newclr = changeColor(props.features[index].access);
-
+            let { color, emoji } = changeColor(props.features[index].access);
+            console.log(color);
             return (
               <>
-                <li>
+                <li key={index}>
                   {/*  render green for access and red for no access */}
-                  <span style={newclr}>{props.features[index].name}</span>
+                  <span style={{ color }}>
+                    {`${emoji}           ${props.features[index].name}`}
+                  </span>
                 </li>
               </>
             );
