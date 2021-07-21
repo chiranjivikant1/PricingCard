@@ -24,12 +24,12 @@
   border: none;
   border-radius: 0.3rem;
   transition: all 0.2s;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  
   margin-top: 20px;
   margin-left: 35px;
   margin-right: 35px;
 
-  box-shadow: rgba(2, 17, 29, 0.56) 0px 22px 70px 4px;
+  box-shadow: #3d88368f 0px 22px 70px 4px;
 }
 
 /* seperation between features */
