@@ -8,12 +8,15 @@ import { Col, Button } from "react-bootstrap";
 function changeColor(bgclr) {
   let objclr = {};
   if (bgclr === "red") {
-    objclr.color = "crimson";
+    objclr.color = "#b92b27";
     objclr.emoji = "❌";
+    objclr.letterSpacing = "3px";
     return objclr;
   } else {
-    objclr.color = "#007bff";
+    objclr.color = "#009688";
     objclr.emoji = "✔️";
+    objclr.letterSpacing = "3px";
+
     return objclr;
   }
 }

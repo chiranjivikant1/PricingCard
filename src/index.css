@@ -1,6 +1,17 @@
 #body {
-  background: #007bff;
-  background: linear-gradient(to right, #0062e6, #33aeff);
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 /* to contain all cards  */
 .container {
@@ -14,9 +25,10 @@
   transition: all 0.2s;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   margin-top: 20px;
-  margin-left:35px;
-  margin-right:35px;
- 
+  margin-left: 35px;
+  margin-right: 35px;
+
+  box-shadow: rgba(2, 17, 29, 0.56) 0px 22px 70px 4px;
 }
 
 /* seperation between features */
@@ -30,6 +42,7 @@
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
   font-weight: bold;
+  color: #0f2027;
 }
 
 /* card price css */
@@ -37,6 +50,7 @@
   font-size: 3rem;
   margin: 0;
   text-align: center;
+  color: #141e61;
 }
 
 /* per plan css */
@@ -49,25 +63,12 @@
   margin-bottom: 1rem;
   list-style-type: none;
   font-weight: 500;
-  
 }
 
 .dull {
   opacity: 0.7;
 }
 /* dull makes unsupported feature and plan name dull */
-
-/* button css */
-.btn {
-  font-size: 80%;
-  border-radius: 10rem;
-  letter-spacing: 0.1rem;
-  font-weight: bold;
-  padding: 1rem;
-  opacity: 0.7;
-  transition: all 0.2s;
-  margin-bottom: 10px
-}
 
 /* hover on card  */
 .card:hover {
@@ -77,5 +78,29 @@
 }
 
 .btn {
-  opacity: 1;
+  background-image: linear-gradient(
+    to right,
+    #16222a 0%,
+    #3a6073 51%,
+    #16222a 100%
+  );
+}
+.btn {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10rem;
+  display: block;
+  letter-spacing: 0.1rem;
+}
+
+.btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
