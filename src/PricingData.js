@@ -107,7 +107,7 @@ const PricingData = [
       },
       {
         name: "Monthly Status Reports",
-        access: "red",
+        access: "green",
       },
     ],
   },
